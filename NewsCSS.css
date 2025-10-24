@@ -26,6 +26,10 @@ p{
   font-family: "Roboto";
 }
 
+a{
+  font-family: "Roboto";
+}
+
 .brand{
   display: flex;
   flex-direction: column;
@@ -107,4 +111,5 @@ body { padding-top: 56px; }
 .spotlight-photo{ width:72px; height:72px; object-fit:cover; border-radius:6px; }
 .spotlight-info h3{ margin:0; }
 .spotlight-info .role{ margin:4px 0 0 0; color:#666; font-size:0.9rem; }
+
 .spotlight-card .dropdown-toggle{ margin-left:auto; }
