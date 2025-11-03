@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Articles — Newspaper</title>
-  <link rel="stylesheet" href="NewsCSS.css">
-</head>
-<body>
-  <section id="Nav" class="navigation">
-    <nav id="topnav" class="topnav">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="index.html" class="nav-link" data-link="home">Home</a></li>
-        <li class="nav-item"><a href="Articles.html" class="nav-link" data-link="articles">Articles</a></li>
- 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Articles — Newspaper</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="Scripts/UI.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Articles</h1>
+      <p class="lead">All published articles</p>
+    </header>
+
+    <main class="container">
+      <ul class="article-list">
+        <li class="dropdown">
+          <div class="dropdown-header">
+            <a id="Novemeber">December 2025</a>
+            <button
+              class="dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="preview-nov"
+            >
+              Preview
+            </button>
+          </div>
+          <div
+            id="preview-nov"
+            class="dropdown-content"
+            role="region"
+            aria-hidden="true"
+          >
+            <p>Nothing yet</p>
+            <a href="ArticleViewer.html">Read full article →</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="dropdown-header">
+            <a id="November">November 2025</a>
+            <button
+              class="dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="preview-dec"
+            >
+              Preview
+            </button>
+          </div>
+          <div
+            id="preview-dec"
+            class="dropdown-content"
+            role="region"
+            aria-hidden="true"
+          >
+            <p>Nothing yet.</p>
+            <a href="articles/article-2.html">Read full article →</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="dropdown-header">
+            <a id="December">October 2025</a>
+            <button
+              class="dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="preview-dec"
+            >
+              Preview
+            </button>
+          </div>
+          <div
+            id="preview-dec"
+            class="dropdown-content"
+            role="region"
+            aria-hidden="true"
+          >
+            <p>Nothing yet.</p>
+            <a href="articles/article-3.html">Read full article →</a>
+          </div>
+        </li>
       </ul>
-    </nav>
-  </section>
-  <header class="topbar">
-    <h1>Articles</h1>
-    <p class="lead">All published articles</p>
-  </header>
-
-  <main class="container">
-    <ul class="article-list">
-      <li class="dropdown">
-        <div class="dropdown-header">
-          <a id="Novemeber">December 2025</a>
-          <button class="dropdown-toggle" aria-expanded="false" aria-controls="preview-nov">Preview</button>
-        </div>
-        <div id="preview-nov" class="dropdown-content" role="region" aria-hidden="true">
-          <p>Nothing yet</p>
-          <a href="articles/article-1.html">Read full article →</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <div class="dropdown-header">
-          <a id="November">November 2025</a>
-          <button class="dropdown-toggle" aria-expanded="false" aria-controls="preview-dec">Preview</button>
-        </div>
-        <div id="preview-dec" class="dropdown-content" role="region" aria-hidden="true">
-          <p>Nothing yet.</p>
-          <a href="articles/article-2.html">Read full article →</a>
-        </div>
-      </li>
-            <li class="dropdown">
-        <div class="dropdown-header">
-          <a id="December">October 2025</a>
-          <button class="dropdown-toggle" aria-expanded="false" aria-controls="preview-dec">Preview</button>
-        </div>
-        <div id="preview-dec" class="dropdown-content" role="region" aria-hidden="true">
-          <p>Nothing yet.</p>
-          <a href="articles/article-3.html">Read full article →</a>
-        </div>
-      </li>
-    </ul>
-  </main>
-
-  <script src="NewsJs.js" defer></script>
-</body>
+    </main>
+  </body>
 </html>
