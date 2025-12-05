@@ -227,3 +227,9 @@ body {
 .spotlight-card .dropdown-toggle {
   margin-left: auto;
 }
+
+article p {
+  margin: 2rem;
+  text-indent: 2rem;
+  font-size: 1.5rem;
+}
